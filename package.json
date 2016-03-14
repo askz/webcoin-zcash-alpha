@@ -1,6 +1,6 @@
 {
   "name": "webcoin-zcash-alpha",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Zcash alpha parameters for webcoin",
   "main": "index.js",
   "scripts": {
