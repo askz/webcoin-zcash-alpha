@@ -1,18 +1,11 @@
-var seeds = require('bitcoin-net').seeds
+var createStructs = require('bitcoin-protocol').messages.createStructs
+var structs = require('./structs.js')
 
-var magic = 0x1799120c
-var defaultPort = 18333
-var protocolVersion = 70002
+exports.magic = 0x1aaa2201
+exports.defaultPort = 18333
+exports.protocolVersion = 70002
+exports.staticPeers = [
+  'alphatestnet.z.cash'
+]
 
-var getSeeds = function (opts) {
-  return [
-    seeds.fixed('alphatestnet.z.cash', { defaultPort })
-  ]
-}
-
-module.exports = {
-  magic,
-  defaultPort,
-  protocolVersion,
-  getSeeds
-}
+exports.messages = createStructs(structs)
