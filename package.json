@@ -22,7 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "bitcoin-protocol": "^2.0.0",
-    "bitcoin-util": "^2.0.0",
+    "bitcoin-util": "^2.0.3",
     "webcoin-bitcoin-testnet": "^0.0.7"
   },
   "devDependencies": {
